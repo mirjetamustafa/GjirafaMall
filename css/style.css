@@ -518,6 +518,9 @@ footer .form-control::placeholder{
 .kushtet a:hover{
     color: #444;
 }
+.foot-mob{
+    display: none;
+}
 /* Footer End */
 
 
@@ -757,6 +760,38 @@ aside{
 .prev div:hover{
     background-color: #eee;
 }
+/* Mobile */
+.next-1{
+    margin-left: -15px;
+}
+.next-1.disabled{
+    display: none;
+}
+.next-1 div:hover{
+    background-color: #eee;
+}
+.next-1 div{
+    color:#464a4c;
+    border:1px solid rgba(0,0,0,.15);
+    font-size:15px;
+    padding: 10px 15px 3px 15px;
+    cursor: pointer;
+}
+
+.prev-1{
+    margin-right: -15px;
+}
+.prev-1.disabled{
+    display: none;
+}
+.prev-1 div{
+    color:#464a4c;
+    border:1px solid rgba(0,0,0,.15);
+    font-size:15px;
+    padding: 10px 15px 3px 15px;
+    cursor: pointer;
+}
+/* Mobile end */
 #dropdown-menu-1{
     width: 100%;
 }
@@ -821,10 +856,10 @@ aside{
     color: #fff;
     padding: 5px;
 }
-.produktet{
+.produktet-kozmetik{
     margin-bottom: -70px;
 }
-.produktet:hover{
+.produktet-kozmetik:hover{
     margin-bottom: 0px;
 }
 .border{
@@ -858,8 +893,216 @@ aside{
     }
 }
 /* Section 1 */
+.box-mobile{
+    display: none;
+}
+.mob-2{
+    display: none;
+}
+.mob-3{
+    display: none;
+}
 /* Kozmetike End */
+/* Produktet */
+.kozmetike-1 nav ol li a{
+    text-decoration: none;
+}
+.produkti{
+    color: #023e8a;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 14px;
+}
+.produkti:hover{
+    color: #0066c0;
+}
+.vlerso-kete-produkt a{
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+}
+.vlerso-kete-produkt a::before{
+    content: "";
+    position: absolute;
+    border-left: 2px solid #aaa;
+    height: 15px;
+    margin-left: -15px;
+    margin-top: 5px;
+}
+.vlerso-kete-produkt a:hover{
+    color: #0066c0;
+    text-decoration: underline;
+}
+.teb{
+    font-size: 15px;
+    color: #aaa;
+}
+.rregullt{
+    text-decoration: line-through;
+    color: #999;
+}
+.tvsh{
+    color: #aaa;
+    font-size: 13px;
+}
+.disponueshem{
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+.disponueshem:hover{
+    color: #0066c0;
+    text-decoration: underline;
+}
+.kur-arrine{
+    color: #20648b;
+    font-size: 13px;
+    border-bottom: 1px dotted #777;
+    text-decoration: none;
+}
+.kur-arrine:hover{
+    text-decoration: underline;
+    color: #20648b;
+}
+.active-1{
+    fill: #EF5238;
+    width: 35px;
+    margin: 10px;
+}
+.close-video{
+    color: #fff;
+}
+#howToBuy button{
+    margin: -20px -20px 0 0;
+    background-color: #e85039;
+    border-radius: 5px;
+    opacity: 1;
+    color: #fff;
+    padding: 7px;
+}
+/* Sasia */
+.sasia-text{
+    margin-left: 40px;
+    margin-bottom: -1px;
+    font-size: 14px;
+    color: #464a4c;
+}
+.sasia{
+    height: 50px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sasia span{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sasia .minus, .plus{
+    color: #aaa;
+    cursor: pointer;
+}
+.sasia .minus:hover, .plus:hover{
+    color: #444;
+}
+/* Sasia end */
+/* Bleje menjehere */
+.bleje{
+    margin-top: 15px;
+}
+.bleje a{
+    background-color: #f04a23;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+}
+.bleje a:hover{
+    background-color: #d64826;
+    color: #fff;
+}
+.bleje-menjeher{
+    color: #f04a23;
+}
 
+.produkti-1 img{
+    width: 15%;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+.produkti-1 h6{
+    line-height: 23px;
+}
+.produkti-1 h6 i{
+    font-size: 10px;
+}
+.mod{
+    border-bottom: 2px solid #eee;
+    width: 95%;
+    margin-left: 20px;
+}
+.form-check{
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.form-control{
+    border: none;
+}
+.modal-body input[type=text],input[type=email], .form-select{
+    border: 1px solid #aaa;
+    width: 107%;
+    margin-left: -10px;
+}
+.modal-body-produkti{
+    overflow-y: scroll;
+    height: 300px;
+}
+.mod-1{
+    border-bottom: 2px solid #eee;
+    width: 100%;
+    margin-top: 10px;
+}
+.transporti, .transporti-1{
+    cursor: pointer;
+}
+.transporti img{
+    width: 80px;
+    padding-right: 10px;
+    margin-left: -20px;
+}
+.footer-modal{
+    background-color: #d9edf7;
+    position: relative;
+}
+.footer-modal::before{
+    display: block;
+    position: absolute;
+    content: ' ';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3rem;
+    z-index: 1;
+    background-color: #78909c;
+
+}
+.info{
+    z-index: 10;
+}
+.info i{
+   font-size: 30px;
+   color: #fff;
+}
+/* Bleje Menjehere end */
+/* Produktet end */
 
 /* Mobile */
 @media (max-width: 844px) {
@@ -961,6 +1204,84 @@ aside{
         display: none;
     }
     /* End Produktet */
+
+    /* Kozmetike */
+    .mob{
+        display: none;
+    }
+    .kozmetike-1{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    .box-mobile{
+        display: grid;
+        gap: 5px;
+        grid-auto-flow: column;
+        grid-auto-columns: 21%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        overscroll-behavior-inline: contain;
+        box-shadow: 0 4px 4px 0 rgba(215, 212, 212, 0.2), 0 4px 4px 0 rgba(215, 212, 212, 0.4);
+    }
+    .media-element{
+        display: grid;
+        grid-template-rows: min-content;
+        gap: 5px;
+        padding: 5px;
+    }
+    .media-element > a{
+        text-decoration: none;
+        color: #444;
+        font-size: 14px;
+        padding: 10px;
+    }
+    .mob-1{
+        display: none;
+    }
+    .mob-2{
+        display: inline;
+        box-shadow: 0 4px 4px 0 rgba(215, 212, 212, 0.2), 0 4px 4px 0 rgba(215, 212, 212, 0.2);
+    }
+    .fw-700{
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .mob-3{
+        display: inline;
+        background-color: #e85039;
+        color: #fff;
+        margin: 20px 0px 0px 5px;
+    }
+    .row-1{
+        border-top: none;
+    }
+    /* End Kozmetke */
+    /* Footer */
+    .foot-mob{
+        display: inline;
+    }
+    .kushtet{
+        padding-left: 20px;
+    }
+    .kushtet a{
+        float: none;
+        font-size: 15px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+    .kushtet-1{
+        position: relative;
+    }
+    .kushtet-1::after{
+        content: '';
+        border-right: 2px solid #aaa;
+        height: 15px;
+        position: absolute;
+        margin-left: 15px;
+        margin-top: 5px;  
+    }
 }
 /* Ipad Air */
 @media (min-width: 820px) and (max-width: 1180px) {
@@ -988,11 +1309,40 @@ aside{
     .kycu1{
         visibility: hidden;
     }
+    .nav{
+        margin-top: -90px;
+        margin-left: -5px;
+        z-index: 1;
+        border: none;
+    }
     .navbar-toggler{
-        margin-top: -250px;
+        margin-top: -200px;
         margin-left: -20px;
         z-index: 1;
         border: none;
     }
     /* End navbar */ 
+    .box-mobile{
+        display: none;
+        gap: 5px;
+        grid-auto-flow: column;
+        grid-auto-columns: 21%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        overscroll-behavior-inline: contain;
+    }
+    .media-element{
+        display: grid;
+        grid-template-rows: min-content;
+        gap: 5px;
+        padding: 5px;
+        
+    }
+    .media-element > a{
+        text-decoration: none;
+        color: #444;
+        font-size: 16px;
+        padding: 10px;
+    }
+    /* End Kozmetke */
 }
