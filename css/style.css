@@ -7,7 +7,9 @@ body{
 .search, input{
     height: 45px;
 }
-
+header{
+    box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
+}
 header input[type=search]{
     border: none;
 }
@@ -142,6 +144,32 @@ header input[type=search]{
     border-bottom: 1px solid #eee;
     width: 50%;
 }
+.label-cart-amount{
+    font-weight: 400;
+    font-size: 9px;
+    width: 18px;
+    height: 18px;
+    line-height: 16px;
+    vertical-align: middle;
+    padding: 0;
+    position: absolute;
+    right: -6px;
+    top: -9px;
+   
+    color: #fff;
+}
+/* .pulsing {
+    box-shadow: 0 0 0 #f04a23;
+     animation: pulsin 2s infinite; 
+} */
+.badge1 {
+    background-color: #f04a23;
+}
+.badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.7em;
+    border-radius: 10rem;
+}
 .dyqanet-0{
     margin-top: -130px;
 }
@@ -169,6 +197,7 @@ header input[type=search]{
     margin: 5px;
 }
 /* End Mega Menu */
+
 /* End Header */
 
 /* Offcanvas */
@@ -829,21 +858,21 @@ aside{
     margin-left: -13px;
     
 }
-.heart a{
+.heart .btn{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     color: #464a4c;
-    padding: 20px;
+    padding: 3px 15px 3px 15px;
 }
 .heart:hover{
     background-color: #eee;
 }
 
-.produkt-hover-1  a{
+.produkt-hover-1  .btn{
     text-decoration: none;
     font-size: 20px;
     color: #464a4c;
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
 }
 .arrow-down{
     background-color: #f04a23; 
@@ -852,7 +881,7 @@ aside{
 .arrow-down:hover{
     background-color: #d74629;
 }
-.arrow-down a i{
+.arrow-down div i{
     color: #fff;
     padding: 5px;
 }
@@ -1049,7 +1078,7 @@ aside{
     width: 95%;
     margin-left: 20px;
 }
-.form-check{
+.modal-check .form-check{
     border: 1px solid #aaa;
     border-radius: 5px;
 }
@@ -1101,8 +1130,408 @@ aside{
    font-size: 30px;
    color: #fff;
 }
+.shop-cart{
+    border: 2px solid #f04a23;
+    width: 49%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.shop-cart a{
+    text-decoration: none;
+    color: #f04a23;
+    font-size: 20px;
+}
+.shop-cart a i{
+    margin-left: 60px;
+}
+.shop-cart:hover a{
+    color: #fff;
+}
+.shop-cart button{
+    text-decoration: none;
+    color: #f04a23;
+    font-size: 20px;
+}
+.shop-cart button i{
+    margin-left: 50px;
+}
+.shop-cart:hover button{
+    color: #fff;
+}
+.shop-cart:hover {
+    background-color: #f04a23;
+}
 /* Bleje Menjehere end */
+
+/* Social icon */
+.fb{
+    background-color: #3b5998;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.fb:hover{
+    background-color: #355291;
+}
+.fb a{
+    text-decoration: none;
+    color: #fff;
+}
+.twitter{
+    background-color: #55acee;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.twitter:hover{
+    background-color: #479fe1;
+}
+.twitter a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.mail{
+    background-color: #777;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.mail:hover{
+    background-color: rgb(105, 105, 105);
+}
+.mail a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkedin{
+    background-color: #0077b5;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.linkedin:hover{
+    background-color: #016ba4;
+}
+.linkedin a{
+    text-decoration: none;
+    color: #fff;
+}
+.whatsapp{
+    background-color: #25d366;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.whatsapp:hover{
+    background-color: #20c75d;
+}
+.whatsapp a{
+    text-decoration: none;
+    color: #fff;
+}
+/* Social icon end */
+
+/* Pershkrimi i produktit */
+.pershkrimi-produktit{
+    position: relative;
+}
+.pershkrimi-produktit::before{
+    content: '';
+    position: absolute;
+    border-left: 1px solid #aaa;
+    padding-left: 10px;
+    height: 100%;
+}
+.pershkrimi-1 ul{
+    list-style-type: none;
+}
+.pershkrimi-1 ul li{
+    line-height: 35px;
+    margin-left: -30px;
+}
+.pershkrimi-1 ul li a{
+    text-decoration: none;
+    color: #aaa;
+    border-bottom: 2px solid #aaa;
+    border-width: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.pershkrimi-1 ul li a:hover{
+    color: #464a4c;
+}
+.badge{
+    background-color: #aaa;
+}
+.pershkrimi{
+    color: #f04a23;
+    border-bottom: 2px solid #f04a23;
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* Read more button */
+
+.more-text{
+    display: none;
+}
+.text.show-more .more-text{
+    display: inline;
+}
+/* Read more button end */
+/* Pershkrimi i produktit end */
+
 /* Produktet end */
+
+
+/* produktet e fundit */
+.produktet-e-fundit h4{
+    color: #f04a23;
+    font-weight: 400;
+    border-bottom: 2px solid #eee;
+    padding: 10px;
+    width: 95%;
+    margin-left: 2%;
+}
+.produktet-e-fundit .overflow-1{
+    overflow-x: scroll;
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 15px;
+    
+}
+.produktet-e-fundit .col-lg-2:hover{
+    box-shadow: 0 4px 4px 0 rgba(215, 212, 212, 0.2), 0 4px 4px 0 rgba(215, 212, 212, 0.2);
+}
+
+/* produktet e fundit end */
+
+/* Produkte te ngjashme */
+.produkte-te-ngjashme h4{
+    color: #f04a23;
+    font-weight: 400;
+    border-bottom: 2px solid #eee;
+    padding: 10px;
+    width: 95%;
+    margin-left: 2%;
+}
+/* Produkte te ngjashme end */
+
+/*  Section 1 Cart */
+
+.costep  a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
+.costep-1  a,
+.costep-2  a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+}
+
+.costep-label{
+    font-size: 13px;
+}
+.costep, .costep-1, .costep-2, .costep-link,
+.costep-icon, .costep-icon-1, .costep-icon-2{
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.costep::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #f2f2f2;
+    display: block;
+    width: 200px;
+    top: 24px;
+    left: 0;
+    right: 50%;
+    z-index: 0;
+}
+.costep-1::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #f2f2f2;
+    display: block;
+    width: 200px;
+    top: 24px;
+    left: 0;
+    right: 50%;
+    z-index: 0;
+}
+.costep-icon{
+    border: 2px solid #f14b23;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #222222;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 23px;
+}
+
+.costep-icon-1, .costep-icon-2{
+    border: 2px solid #f2f2f2;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #f2f2f2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 23px;
+}
+/* Button cart */
+.cart-button .btn{
+    border: 1px solid #ddd;
+    color: #292b2c;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%);
+    font-weight: 500;
+    border-radius: 0.1845rem;
+    padding: 0.775rem 5rem;
+    font-size: 17px;
+}
+
+.cart-button .btn-vazhdo{
+    border: 1px solid #ddd;
+    color: #fff;
+    background-color: #f44336;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%);
+    font-weight: 500;
+    border-radius: 0.1845rem;
+    padding: 0.775rem 8rem;
+    font-size: 17px;
+    float: right;
+}
+.cart-button .btn-vazhdo:hover{
+    background-color: #d74629;
+}
+.cart-button .btn-kthehu:hover{
+    background-color: #f2f2f2;
+}
+/* Button cart end */
+/*  Section 1 Cart End */
+
+/* Section 2 cart */
+.cart-flex{
+    color: #000;
+    font-weight: 700;
+}
+.btn-x{
+    border: 1px solid #ddd;
+    border-radius: 3px 3px 0 0;
+    color: #292b2c;
+    background-color: #f7f7f9;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%);
+}
+.btn-x:hover{
+    background-color: #f44336;
+    color: #fff;
+}
+.btn-heart{
+    border: 1px solid #ddd;
+    border-radius: 0px 0px 3px 3px;
+    color: #292b2c;
+    padding: 5px 9px;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%);
+}
+.btn-heart:hover{
+    background-color: #f7f7f9;
+    
+}
+
+.sasiaa{
+    height: 40px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 220%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sasiaa span{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.sasia .minus, .plus{
+    color: #aaa;
+    cursor: pointer;
+}
+.sasia .minus:hover, .plus:hover{
+    color: #444;
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-color: #f7f7f9;
+}
+.jumbotron .btn{
+    background-color: #f2f2f2;
+    color: #444;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px 4px 4px 0px;
+    font-weight: 600;
+    font-size: 14px;
+    
+}
+.jumbotron i{
+    font-size: 18px;
+}
+.jumbotron .btn:hover{
+    background-color: #f44336;
+    color: #fff;
+}
+.input-focus{
+    border: 1px solid #ddd;
+}
+.input-focus:focus {
+    border: 1px solid #f44336;
+  }
+.kalkulimi{
+    color: #a94442;
+}
+.tot-per-pages{
+    font-size: 14px;
+    color: #aaa;
+}
+.total-per-pages{
+    font-size: 16px;
+}
+.koha-arritjes{
+    font-size: 14px;
+}
+.blej{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    padding: 10px;
+}
+.blej .btn-blej{
+    border: 1px solid #ddd;
+    color: #fff;
+    background-color: #f44336;
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%);
+    font-weight: 500;
+    border-radius: 0.1845rem;
+    padding: 0.775rem 8rem;
+    font-size: 17px;
+    float: right;
+}
+.blej .btn-blej:hover{
+    background-color: #d74629;
+}
+/* Jumbotron end */
+/* Section 2 cart end */
+
 
 /* Mobile */
 @media (max-width: 844px) {
